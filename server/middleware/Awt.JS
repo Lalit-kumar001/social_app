@@ -31,6 +31,7 @@ module.exports. verifyToken = async (req, res, next) => {
 
     // Retrieve user from the database
     req.user = decoded
+    
     // req.user = await Client.findById(decoded.id).select("-password");
 
     next();
