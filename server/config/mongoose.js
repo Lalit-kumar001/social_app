@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/tiffen_service',{
+
+mongoose.connect('mongodb+srv://luckykumar807649:sMdyIdODXMPleewq@cluster.zxgdozi.mongodb.net/social?retryWrites=true&w=majority',{
     useNewUrlParser: true,
   useUnifiedTopology: true,
 });
