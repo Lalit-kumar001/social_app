@@ -1,0 +1,76 @@
+.create-post-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    /* horizontally center karega (flex direction ke axis ke opposite direction me work karta hai ) */
+    align-items: center;
+
+    /* verticallly center karega  */
+    justify-content: center;
+    height: 90vh;
+    background: linear-gradient(to right, #e74c3c,yellow); /* Red to Blue gradient background */
+    color: #fff; /* White text color */
+  }
+  
+  #create-post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    background: linear-gradient(to right, #1e3799, green); /* Gradient background for the form */
+    border-radius: 15px; /* Larger rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Slightly darker box shadow for depth */
+    width: 90%; /* Use percentage for better responsiveness */
+    max-width: 400px; /* Maximum width to prevent stretching on larger screens */
+  }
+  
+  h2 {
+    color: #ecf0f1; /* Light gray heading color */
+  }
+  
+  label {
+    font-weight: bold;
+    color: #ecf0f1; /* Light gray label color */
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Slightly larger rounded corners */
+    background-color: #f9f9f9; /* Light background color for inputs */
+    color: #333; /* Dark text color */
+    transition: border-color 0.3s ease-in-out; /* Smooth border color transition */
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #3498db; /* Highlight border color on focus */
+  }
+  
+  #create-post{
+    background: linear-gradient(to right, #3498db, #6c5ce7); /* Gradient background for the button */
+    color: #fff; /* White text color */
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px; /* Slightly larger rounded corners for the button */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out; /* Smooth background color transition */
+  }
+  
+  #create-post:hover {
+    background: linear-gradient(to right, #2980b9, #5f4bd4); /* Darker gradient for button hover */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    #create-post-form {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
+  

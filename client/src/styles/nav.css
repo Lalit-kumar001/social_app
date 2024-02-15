@@ -1,0 +1,101 @@
+.logo{
+ color:#EFC7C7;
+ /* border: 2px solid black; */
+ background-color: #C683D7;
+ /* border-left:  25%; */
+
+ /* border-top-right-radius: 20%; */
+ /* border-bottom-left-radius: 19%; */
+ border-top-left-radius: 40%;
+ border-bottom-right-radius: 40%;
+ font-size: 2rem;
+}
+
+.nav-color{
+    background-color: #164863;
+}
+.authentication{
+   /* color:#001C30; */
+   color: #64CCC5;
+}
+.authentication:hover{
+/* color: #64CCC5; */
+color:#001C30;
+}
+.nav-text{
+  color: #DDF2FD;
+}
+.mg-l{
+    margin-left: 50px;
+}
+
+/* nav.css */
+
+/* Style for circular profile image */
+.profile-image-container {
+  width: 40px; /* Set the width and height according to your design */
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%; /* Apply circular border-radius */
+  margin-right: 10px; /* Add margin if needed */
+  position: relative;
+  
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preserve aspect ratio while covering the container */
+}
+
+
+
+.logout-popup {
+  position: absolute;
+  top: 100%; /* Position it below the profile image */
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff; /* Background color for the popup */
+  border: 1px solid #ccc; /* Border for the popup */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation effect */
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1; /* Ensure the popup is above other elements */
+}
+
+.logout-button {
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: #f00; /* Red background color for the button */
+  color: #fff; /* White text color for the button */
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+
+/* media screen  */
+@media screen and (max-width: 990px) {
+    
+    .logo{
+        width: 80px;
+        margin-top: 20px;
+        margin: auto;
+        background-color: #C683D7;
+    }
+    .authentication{
+        /* color:#001C30; */
+        color: #64CCC5;
+     }
+     .authentication:hover{
+     /* color: #64CCC5; */
+     color:#001C30;
+     }
+     .nav-text{
+        margin-left: -50px;
+     }
+  }
+
+  

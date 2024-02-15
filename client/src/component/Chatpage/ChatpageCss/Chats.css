@@ -1,0 +1,41 @@
+/* ChatPage.css */
+.chat-container {
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .chat-messages {
+    padding: 10px;
+    overflow-y: scroll;
+    max-height: 300px;
+  }
+  
+  .message {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .user1 {
+    background-color: #3498db;
+    color: #fff;
+    align-self: flex-start;
+  }
+  
+  .user2 {
+    background-color: #ecf0f1;
+    color: #333;
+    align-self: flex-end;
+  }
+  

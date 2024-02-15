@@ -1,0 +1,251 @@
+/* Main.css */
+body {
+    margin-top: 70px;
+}
+
+.main-container {
+    display: flex;
+    height: 91vh;
+}
+
+.left-part {
+    flex: 1;
+    background-color: #56c75b;
+    padding: 20px;
+    position: relative;
+    height: 100%; /* Set a fixed height for the left part */
+    /* Enable vertical scrolling */
+    overflow-y: auto; 
+}
+
+#search-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.side-drawer {
+    position: fixed;
+    top: 70px;
+    left: -250px;
+    width: 250px;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+    padding: 20px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    height: 100%; /* Set the input height to 100% */
+}
+
+.side-drawer input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.side-drawer button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 100%; /* Set the button height to 100% */
+}
+
+.side-drawer.open {
+    left: 0;
+    overflow-y: scroll;
+}
+
+.go-button {
+    /* width: 3%; */
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    height: 100%; /* Set the button height to 100% */
+}
+
+.go-button:hover {
+    background-color: #45a049;
+}
+
+.right-part {
+  margin-top: 0%;
+    flex: 3;
+    background-color: rgb(33, 32, 32);
+    /* background-color: white; */
+    padding: 20px;
+    position: relative;
+}
+.user-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    /* font-size: 10%; */
+    font-size:xx-large;
+    color: #333; /* Customize the color as needed */
+    background-color: #93eb97;
+    width: 100%;
+  }
+  
+
+  #input-box{
+    position: absolute;
+    bottom: 1%;
+    width: 90%;
+    margin-right: 2%;
+  }
+
+  #msg-box{
+    height: 90%;
+    margin-top: 0%;
+    /* border: 1px solid red;  */
+    /* margin-bottom: px; */
+    /* overflow-y: auto;  */
+  }
+  
+
+
+  #single-msg-ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: black;
+    overflow-y: auto;
+    scrollbar-width: thin;    /* Firefox */
+    scrollbar-color: transparent transparent;  /* Firefox */
+  }
+  
+  #single-msg-ul::-webkit-scrollbar {
+    width: 6px;  /* For Webkit browsers like Chrome and Safari */
+  }
+  
+  #single-msg-ul::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  #single-msg-ul::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ul{
+    list-style: none;
+  }
+
+  .single-message-sender {
+    align-self: flex-end;
+    background-color: rgb(22, 134, 194);
+    color: white;
+    border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+    padding: 10px; /* Add padding to create space inside the chat bubble */
+    margin-bottom: 10px; /* Add margin to create space between chat bubbles */
+    margin-right: 10px;
+  }
+  
+
+  .single-message-receiver {
+    align-self: flex-start; /* Align receiver's messages to the left */
+   color: black;
+   background-color: rgb(183, 183, 183);
+   border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+   padding: 10px; /* Add padding to create space inside the chat bubble */
+   margin-bottom: 10px; /* Add margin to create space between chat bubbles */
+
+
+  }
+
+  #single-msg-ul li{
+    margin-top: 10px;
+    
+  }
+  
+
+  @media (max-width: 657px) {
+    .main-container {
+      display: flex;
+      /* flex-direction: column; */
+      height: 91vh;
+  }
+
+.left-part {
+  /* flex: 5; */
+  /* width: 100vw; */
+  flex-grow: 2;
+  background-color: #56c75b;
+  padding: 20px;
+  position: relative;
+  height: 100%; /* Set a fixed height for the left part */
+  /* Enable vertical scrolling */
+  overflow-y: auto; 
+}
+
+.right-part {
+  /* margin-top: 0%; */
+  height: 100vh;
+    flex: 2;
+    overflow-y: hidden;
+    background-color: rgb(33, 32, 32);
+    /* background-color: yellow; */
+    /* background-color: white; */
+    padding: 20px;
+    /* display: block; */
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+}
+
+.msg-box {
+  position: relative;
+  height: 100vh;
+}
+
+
+#single-msg-ul{
+  /* background-color: aqua; */
+  margin-top: 70px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+#user-info-box {
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 70px; /* Adjust the top value as needed */
+  right: 5px;
+  width: 100%; /* Make it full-width */
+  /* background-color: yellow; */
+  /* border: 2px solid red; */
+  /* background-color: rgb(33, 32, 32);Set background color as needed */
+}
+
+#input-box
+{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.mobile-chat-history{
+  height: 90vh;
+}
+#single-msg-ul li{
+  margin-top: 10px;
+}
+
+  }

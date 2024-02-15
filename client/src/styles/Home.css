@@ -1,0 +1,19 @@
+
+
+
+body {
+    position: relative;
+    margin: 0; /* Remove default body margin */
+    /* min-height: 100vh; */
+    height: 1000px;
+     /* Set a height for the body for demonstration purposes */
+  }
+  
+  #create-post {
+    /* border: 2px solid black; */
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    height: 50px;
+  }
+  

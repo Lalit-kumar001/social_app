@@ -1,0 +1,27 @@
+Example CSS to divide the page horizontally
+body{
+    margin-top: 70px;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh; /* Set the height of the container as 100% of the viewport height */
+  }
+  
+  .left-part {
+    flex: 1; /* Take up 50% of the width of the container */
+    background-color: #f0f0f0; /* Example background color for the left part */
+    padding: 20px; /* Example padding for spacing */
+  }
+  
+  .right-part {
+    flex: 3; /* Take up 50% of the width of the container */
+    background-color: #ffffff; /* Example background color for the right part */
+    padding: 20px; /* Example padding for spacing */
+  }
+
+  /* search button */
+  #search-button{
+    background-color: transparent;
+    border: none;
+  }

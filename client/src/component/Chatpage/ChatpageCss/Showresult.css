@@ -1,0 +1,35 @@
+/* Showresult.css */
+.user-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to right, #128c7e, #075e54); /* Gradient background */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+  }
+  
+  .profile-pic {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    color: #fff; /* White color for user information */
+  }
+  
+  .user-info h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  
+  
+  

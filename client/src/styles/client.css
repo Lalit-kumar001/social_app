@@ -1,0 +1,19 @@
+body{
+
+    background-color:#427D9D;
+    color: white;
+}
+.client-form{
+    margin: 10%;
+}
+.sign-up{
+    display: flex;
+     /* //orizontally centers the child elements within the flex container. */
+    justify-content: center;
+
+    /* vertically centers the child elements within the flex container. */
+    align-items: center;
+
+    margin-top: 2%;
+    
+}
