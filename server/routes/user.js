@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const userController=require('../controller/user_controller')
 const chatController = require('../controller/Chatcontroller.js')
-const verifyToken = require('../middleware/Awt.js')
+const verifyToken = require('../middleware/Awt.js');
 // const postController = require('../controller/postController');
 
 router.post('/create',userController.signup);

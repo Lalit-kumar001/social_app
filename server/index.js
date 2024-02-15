@@ -5,7 +5,7 @@ const bodyParser = require('body-parser'); // Include body-parser
 const cors = require('cors'); // Include cors
 const db = require('./config/mongoose'); // Import the database connection
 // const {requireSignIn} = require('./middleware/Awt.js');
-const port =5000;
+const port =5000||process.env.PORT;
 const multer = require('multer');
 const { log } = require('console');
 

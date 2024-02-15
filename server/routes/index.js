@@ -1,7 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const postController = require('../controller/postController');
-const { requireSignIn } = require('../middleware/Awt.js');
+
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
