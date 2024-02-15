@@ -9,7 +9,7 @@ const upload = multer({ storage: storage });
 const router = express.Router();
 
 //for user route
-router.use('/user', require('./user.js'));
+// router.use('/user', require('./user.js'));
 
 router.get('/protected',  postController.protected);
 router.get('/about', postController.protected);

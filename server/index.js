@@ -55,6 +55,9 @@ app.use('/',require('./routes'));
   app.get("/", (req, res) => {
     res.send("API is running..");
   });
+
+ app.use('/user', require('./routes/user.js'));
+
 // }
 
 // ----------------------------deployement----------------------------
