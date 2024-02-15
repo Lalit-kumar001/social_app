@@ -20,7 +20,7 @@ const jwt = require('jsonwebtoken');
 // };
 
 // module.exports = verifyToken;
-const verifyToken = async (req, res, next) => {
+module.exports. verifyToken = async (req, res, next) => {
   const token = req.headers.authorization && req.headers.authorization.split(' ')[1];
   if (!token) {
     return res.status(401).json({ message: 'Unauthorized' });
@@ -39,4 +39,3 @@ const verifyToken = async (req, res, next) => {
   }
 };
 
-module.exports = verifyToken;
